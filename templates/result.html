@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Roboto, cursive; /* Change the font-family to Roboto */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+            padding: 5px 10px;
+            border: 2px solid #ccc;
+            border-radius: 25px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        }
+        a:hover {
+            color: #ffffff;
+            text-decoration: none;
+            box-shadow: 0 0 10px 2px #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Prediction Result</h1>
+        <p>The model predicts: {{ prediction }}</p>
+        <a href="/">Go back</a>
+    </div>
+</body>
+</html>
